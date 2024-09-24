@@ -1,0 +1,111 @@
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;          
+  margin-top: 20px; 
+}
+
+
+.movie-card {
+  width: 180px;                          
+  background-color: #f8f9fa;             
+  border-radius: 10px;                      
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+  overflow: hidden;                          
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+  cursor: pointer;                         
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.movie-card:hover {
+  transform: translateY(-10px);             
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+.movie-card-image img {
+  width: 100%;                            
+  height: 270px;                         
+  object-fit: cover;                       
+  border-bottom: 1px solid #ddd;            
+}
+
+
+.movie-card-info {
+  padding: 10px;                           
+  text-align: center;                     
+  background-color: #fff;                  
+  flex-grow: 1;                            
+}
+
+
+.movie-card-info p {
+  margin: 5px 0;                           
+  font-size: 14px;                          
+  color: #666;                             
+}
+
+
+.movie-card-info h3 {
+  margin: 10px 0 5px 0;                   
+  font-size: 16px;                          
+  color: #333;                              
+  font-weight: bold;                        
+}
+
+
+.modal-header {
+  background-color: #007bff;                
+  color: white;                             
+}
+
+
+.modal-title {
+  font-size: 24px;                          
+  font-weight: bold;                        
+  text-align: center;                     
+  width: 100%;
+}
+
+
+.modal-body img {
+  width: 100%;                              
+  height: auto;                             
+  margin-bottom: 15px;                   
+}
+
+
+.modal-body p {
+  font-size: 16px;                          
+  color: #555;                              
+}
+
+
+@media (max-width: 768px) {
+  
+  .movie-card {
+    width: 150px;                       
+  }
+
+ 
+  .movie-card-image img {
+    height: 200px;                          
+  }
+
+  
+  .movie-card-info h3 {
+    font-size: 14px;                         
+  }
+
+
+  .movie-card-info p {
+    font-size: 12px;                         
+  }
+}
+  
+    
